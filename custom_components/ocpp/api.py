@@ -34,8 +34,9 @@ from .enums import (
 )
 from .chargepoint import SetVariableResult
 
-_LOGGER: logging.Logger = logging.getLogger(__package__)
-logging.getLogger(DOMAIN).setLevel(logging.INFO)
+
+_LOGGER: logging.Logger = logging.getLogger(__name__)
+
 # Uncomment these when Debugging
 # logging.getLogger("asyncio").setLevel(logging.DEBUG)
 # logging.getLogger("websockets").setLevel(logging.DEBUG)

@@ -60,8 +60,7 @@ from .const import (
     HA_ENERGY_UNIT,
 )
 
-_LOGGER: logging.Logger = logging.getLogger(__package__)
-logging.getLogger(DOMAIN).setLevel(logging.INFO)
+_LOGGER: logging.Logger = logging.getLogger(__name__)
 
 
 def _to_message_trigger(name: str) -> MessageTrigger | None:

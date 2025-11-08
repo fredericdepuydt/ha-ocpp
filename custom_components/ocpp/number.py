@@ -32,8 +32,7 @@ from .const import (
 )
 from .enums import Profiles
 
-_LOGGER: logging.Logger = logging.getLogger(__package__)
-logging.getLogger(DOMAIN).setLevel(logging.INFO)
+_LOGGER: logging.Logger = logging.getLogger(__name__)
 
 
 @dataclass
